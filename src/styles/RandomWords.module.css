@@ -1,0 +1,57 @@
+/* src/styles/RandomWords.module.css */
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line if there's not enough space */
+  }
+  
+  .button {
+    margin: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:disabled {
+    background-color: #808080;
+    cursor: not-allowed;
+  }
+  
+  .noWords {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .word {
+    font-size: 20px;
+    margin: 5px 0;
+    color: #333;
+  }
+  
